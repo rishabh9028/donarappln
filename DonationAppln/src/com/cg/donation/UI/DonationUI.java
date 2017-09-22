@@ -18,7 +18,7 @@ public class DonationUI {
 	  static IDonationService service=new DonationServiceImpl();
 	public static void main(String[] args) throws DonationApplnException {
 		System.out.println("Donation Appln");
-		System.out.println("*************");
+		System.out.println("****************");
 		while(true)
 		{
 			System.out.println("1.Get Donation Details");
@@ -45,7 +45,7 @@ public class DonationUI {
 			String address=sc.next();
 			System.out.println("Enter Donation Amt");
 			int donationAmt=sc.nextInt();
-			details=new DonationDetails(donarName,phoneNo,address,address, donationAmt, null);
+			details=new DonationDetails(donarName,phoneNo,address, donationAmt);
 			int res=service.addDonationDetails(details);
 			System.out.println(res+"  inserted");
 			if(res==1)

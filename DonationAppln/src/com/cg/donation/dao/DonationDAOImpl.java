@@ -3,7 +3,7 @@ package com.cg.donation.dao;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+
 import java.sql.SQLException;
 
 import com.cg.donation.DBUtil.DButil;
